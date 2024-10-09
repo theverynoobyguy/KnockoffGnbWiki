@@ -1,37 +1,46 @@
+/* For the main title text, probably sends you back to the home screen */
 .GnbButton {
     color: white;
     font-size: 25px;
+
+    margin-right: 30px;
     
     transition: 0.35s;
 }
+/* For the main title text button's hover effect */
 .GnbButton:hover {
     color: darkred;
     font-size: 30px;
     cursor: default;
 }
-.DropdownWeapons {
+/* Configuration for the default dropdown buttons */
+.DropdownWeapons, .DropdownMaps {
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 100%;
-    width: 100px;
+    width: 120px;
 
-    margin-left: 40px;
+
     color: white;
 
     font-size: 20px;
 
     transition: 0.4s;
 }
-.DropdownWeapons:hover {
+/* Animation for the actual text for the dropdown button */
+.DropdownWeapons:hover, .DropdownMaps:hover {
     color: darkred;
+    background-color: black;
 }
-.DropdownWeapons:hover .WeaponsDropdown {
+/* Hover effect for the drop downs */
+.DropdownWeapons:hover .WeaponsDropdown, .DropdownMaps:hover .MapsDropdown{
     opacity: 1;
     pointer-events: all;
 }
-.WeaponsDropdown {
+/* For the actual drop down container for the header elements */
+.WeaponsDropdown, .MapsDropdown {
     transition: 0.4s;
 
     background-color: black;
@@ -53,7 +62,8 @@
 
     overflow: hidden;
 }
-.WeaponsDropdown div{
+/* For the div/default configurations of the drop down text elements*/
+.WeaponsDropdown div, .MapsDropdown div{
     color: white;
 
     display: flex;
@@ -69,6 +79,8 @@
 
     transition: 0.4s;
 }
-.WeaponsDropdown div:hover {
+/* For when the buttons inside the dropdown is hovered over */
+.WeaponsDropdown div:hover, .MapsDropdown div:hover{
     background-color: rgba(255, 255, 255, 0.8);
 }
+/* INDIVIDUAL CONFIGURATION */
