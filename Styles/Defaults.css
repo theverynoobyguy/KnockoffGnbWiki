@@ -1,8 +1,26 @@
 header {
+    background-color: black;
+
+    height: 100px;
+    padding: 0px 70px;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 140px;
-    background-color: black;
+
+    display: flex;
+    align-items: center;
+
+    transition-duration: 0.4s;
+}
+
+header:hover {
+    background-color: rgb(36, 0, 0);
+    cursor: default;
+}
+
+body{
+    background-color: gray;
+    margin: 0px 0px 1000px 0px;
 }
