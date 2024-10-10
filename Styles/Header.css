@@ -14,7 +14,8 @@
     cursor: default;
 }
 /* Configuration for the default dropdown buttons */
-.DropdownWeapons, .DropdownMaps {
+
+.DropdownWeapons, .DropdownMaps, .DropdownNations {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,17 +31,19 @@
     transition: 0.4s;
 }
 /* Animation for the actual text for the dropdown button */
-.DropdownWeapons:hover, .DropdownMaps:hover {
+.DropdownWeapons:hover, .DropdownMaps:hover, .DropdownNations:hover {
     color: darkred;
     background-color: black;
 }
 /* Hover effect for the drop downs */
-.DropdownWeapons:hover .WeaponsDropdown, .DropdownMaps:hover .MapsDropdown{
+.DropdownWeapons:hover .WeaponsDropdown, .DropdownMaps:hover .MapsDropdown,
+.DropdownNations:hover .NationsDropdown{
     opacity: 1;
     pointer-events: all;
 }
 /* For the actual drop down container for the header elements */
-.WeaponsDropdown, .MapsDropdown {
+.WeaponsDropdown, .MapsDropdown, .NationsDropdown {
+
     transition: 0.4s;
 
     background-color: black;
@@ -83,4 +86,20 @@
 .WeaponsDropdown div:hover, .MapsDropdown div:hover{
     background-color: rgba(255, 255, 255, 0.8);
 }
+/* HOVER TEXTS */
+.NationsDropdown {
+    overflow: visible;
+
+    bottom: -90px;
+
+    height: 80px;
+    width: 120px;
+
+    padding: 5px 5px;
+
+    display: flex;
+
+    font-size: 16px;
+}
+
 /* INDIVIDUAL CONFIGURATION */
