@@ -15,7 +15,8 @@
 }
 /* Configuration for the default dropdown buttons */
 
-.DropdownWeapons, .DropdownMaps, .DropdownNations {
+.DropdownWeapons, .DropdownMaps, .DropdownNations, .DropdownCosmetics,
+.DropdownOthers {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,19 +32,20 @@
     transition: 0.4s;
 }
 /* Animation for the actual text for the dropdown button */
-.DropdownWeapons:hover, .DropdownMaps:hover, .DropdownNations:hover {
+.DropdownWeapons:hover, .DropdownMaps:hover, .DropdownNations:hover,
+.DropdownCosmetics:hover, .DropdownOthers:hover {
     color: darkred;
     background-color: black;
 }
 /* Hover effect for the drop downs */
 .DropdownWeapons:hover .WeaponsDropdown, .DropdownMaps:hover .MapsDropdown,
-.DropdownNations:hover .NationsDropdown{
+.DropdownNations:hover .NationsDropdown, .DropdownCosmetics:hover .CosmeticsDropdown,
+.DropdownOthers:hover .OthersDropdown{
     opacity: 1;
     pointer-events: all;
 }
 /* For the actual drop down container for the header elements */
-.WeaponsDropdown, .MapsDropdown, .NationsDropdown {
-
+.WeaponsDropdown, .MapsDropdown, .NationsDropdown, .CosmeticsDropdown, .OthersDropdown {
     transition: 0.4s;
 
     background-color: black;
@@ -66,7 +68,7 @@
     overflow: hidden;
 }
 /* For the div/default configurations of the drop down text elements*/
-.WeaponsDropdown div, .MapsDropdown div{
+.WeaponsDropdown div, .MapsDropdown div, .CosmeticsDropdown div, .OthersDropdown div{
     color: white;
 
     display: flex;
@@ -83,7 +85,8 @@
     transition: 0.4s;
 }
 /* For when the buttons inside the dropdown is hovered over */
-.WeaponsDropdown div:hover, .MapsDropdown div:hover{
+.WeaponsDropdown div:hover, .MapsDropdown div:hover, .CosmeticsDropdown div:hover,
+.OthersDropdown div:hover{
     background-color: rgba(255, 255, 255, 0.8);
 }
 /* HOVER TEXTS */
@@ -93,7 +96,7 @@
     bottom: -90px;
 
     height: 80px;
-    width: 120px;
+    width: 110px;
 
     padding: 5px 5px;
 
@@ -102,4 +105,40 @@
     font-size: 16px;
 }
 
+.OthersDropdown div {
+    font-size: 14px;
+}
+
 /* INDIVIDUAL CONFIGURATION */
+.SearchButton {
+    position: absolute;
+    right: 100px;
+
+    height: 40px;
+    width: 500px;
+
+    background: none;
+    border: none;   
+
+    border-bottom: 1px solid white;
+
+    transition: 0.4s;
+    outline: none;
+
+    padding-left: 10px;
+
+    color: white;
+}
+.SearchButton:focus {
+    border-bottom-color: darkred;
+}
+.SearchButton:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.SearchButton::placeholder {
+    color: white;
+    font-family: Roboto;
+
+    font-weight: 300;
+    font-size: 15px;
+}
