@@ -95,13 +95,13 @@
 .NationsDropdown {
     overflow: visible;
 
-    bottom: -160px;
+    bottom: -172px;
 
 
-    height: 150px;
+    height: 156px;
     width: 110px;
 
-    padding: 5px 5px;
+    padding: 8px 5px;
 
     display: flex;
 
