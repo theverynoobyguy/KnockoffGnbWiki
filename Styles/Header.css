@@ -70,6 +70,9 @@
 /* For the div/default configurations of the drop down text elements*/
 .WeaponsDropdown div, .MapsDropdown div, .CosmeticsDropdown div, .OthersDropdown div{
     color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
 
     display: flex;
     align-items: center;
@@ -80,7 +83,6 @@
     height: 100px;
 
 
-    font-size: 16px;
 
     transition: 0.4s;
 }
@@ -93,47 +95,65 @@
 .NationsDropdown {
     overflow: visible;
 
-    bottom: -90px;
+    bottom: -160px;
 
-    height: 80px;
+
+    height: 150px;
     width: 110px;
 
     padding: 5px 5px;
 
     display: flex;
 
-    font-size: 16px;
-}
-
-.OthersDropdown div {
+    font-family: Roboto;
+    font-weight: 300;
     font-size: 14px;
 }
 
-/* INDIVIDUAL CONFIGURATION */
-.SearchButton {
-    position: absolute;
-    right: 100px;
 
+/* INDIVIDUAL CONFIGURATION */
+.SearchButtonBackground {
+    border: none;
+}
+.SearchButton {
     height: 40px;
-    width: 500px;
+    width: 540px;
 
     background: none;
     border: none;   
 
-    border-bottom: 1px solid white;
-
     transition: 0.4s;
     outline: none;
 
-    padding-left: 10px;
+    padding-left: 50px;
 
     color: white;
+    border-bottom: 1px solid white;
 }
-.SearchButton:focus {
+.SearchButton:focus{
     border-bottom-color: darkred;
 }
 .SearchButton:hover {
     background-color: rgba(255, 255, 255, 0.4);
+}
+.SearchButtonImage {
+    height: 20px;
+}
+.SearchButtonImageBackground {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    margin-top: 2px;
+    transition: 0.4s;
+
+    background: none;
+
+    border: none;
+    pointer-events: none;
 }
 .SearchButton::placeholder {
     color: white;
