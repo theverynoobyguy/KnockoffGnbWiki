@@ -13,6 +13,8 @@ header {
     align-items: center;
 
     transition-duration: 0.4s;
+
+    z-index: 100;
 }
 
 header:hover {
@@ -21,6 +23,7 @@ header:hover {
 }
 
 body{
+    margin: 0;
     background-color: gray;
-    margin: 0px 0px 1000px 0px;
+    padding: 100px 0px 1000px 0px;
 }
