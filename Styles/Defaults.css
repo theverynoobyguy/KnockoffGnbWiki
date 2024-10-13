@@ -27,3 +27,7 @@ body{
     background-color: gray;
     padding: 100px 0px 1000px 0px;
 }
+main {
+    display: flex;
+    flex-direction: column;
+}

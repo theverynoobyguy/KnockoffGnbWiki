@@ -6,6 +6,7 @@
     background-color: black;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -13,8 +14,9 @@
     color: white;
 
     position: absolute;
-    top: 200px;
+
     width: 500px;
+    padding-bottom: 300px;
 
     display: flex;
     justify-content: center;
@@ -27,7 +29,6 @@
     color: white;
 
     position: absolute;
-    top: 300px;
     width: 1000px;
 
     display: flex;
@@ -44,4 +45,89 @@
     object-fit: cover;
 
     filter: blur(8px);
+}
+/* GAME DIRECTORY */
+.GameDirectory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 200px;
+}
+.GameDirectoryImg {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+.GameDirectoryTitle {
+    position: absolute;
+
+    color: white;
+    font-size: 40px;
+
+    padding-bottom: 50px;
+
+    font-family: Roboto;
+}
+.GameDirectoryText {
+    position: absolute;
+
+    color: white;
+    font-size: 20px;
+
+    padding-top: 50px;
+
+    font-family: Roboto;
+}
+/* GAME DIRECTORY GRID */
+.GameDirectoryButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.GameDirectoryButton {
+    width: 1fr;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.GameDirectoryButtonBackground {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+.GameDirectoryButtonTitle {
+    color: white;
+
+    position: absolute;
+    font-size: 40px;
+}
+.GameDirectoryButtonText {
+    color: white;
+
+    font-size: 20px;
+    font-family: Roboto;
+
+    position: absolute;
+    padding-top: 100px;
+
+    opacity: 0;
+    transition: 0.4s;
+
+    width: 500px;
+    text-align: center;
+}
+.GameDirectoryButton:hover .GameDirectoryButtonBackground{
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+.GameDirectoryButton:hover .GameDirectoryButtonText {
+    opacity: 1;
 }
