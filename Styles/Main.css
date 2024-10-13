@@ -131,3 +131,62 @@
 .GameDirectoryButton:hover .GameDirectoryButtonText {
     opacity: 1;
 }
+
+/* GAME DIRECTORY MISCELLANEOUS */
+.GameDirectoryMiscellaneous {
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.4s;
+}
+.GameDirectoryMiscellaneous:hover {
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+.GameDirectoryMiscellaneous:hover .MiscellaneousTitle{
+    padding-bottom: 50px;
+}
+.GameDirectoryMiscellaneous:hover .MiscellaneousText {
+    opacity: 1;
+    padding-top: 50px;
+}
+.MiscellaneousBackground {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+.MiscellaneousTitle {
+    position: absolute;
+    
+    color: white;
+    font-size: 40px;
+
+    transition: 0.4s;
+}
+.MiscellaneousText {
+    color: white;
+    font-size: 20px;
+
+    position: absolute;
+
+    opacity: 0;
+
+    transition: 0.4s;
+}
+/* DISCLAIMER */
+.Disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+
+    width: 100%;
+    height: 500px;
+}
