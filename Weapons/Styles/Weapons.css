@@ -1,0 +1,109 @@
+.TitleDiv {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+}
+.TitleDiv-Background {
+    height: 100%;
+    width: 100%;
+
+    filter: blur(0px);
+    
+
+    transition: 0.4s;
+}
+.TitleDivLeftSection {
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.TitleDivLeftTitleText {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    
+    transition: 0.4s;
+}
+.TitleDivLeftTitleDescription {
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+    opacity: 0;
+    width: 400px;
+    
+    transition: 0.4s;
+}
+.TitleDivLeftSection:hover .TitleDivLeftTitleText {
+    padding-bottom: 100px;
+}
+.TitleDivLeftSection:hover .TitleDivLeftTitleDescription {
+    opacity: 1;
+}
+.TitleDivLeftSection:hover .TitleDiv-Background {
+    filter: blur(3px);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+.TitleDivRightSection {
+    width: 55%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: visible;
+}
+.TitleDivRightRowSection {
+    height: 250px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.TitleDivRowSectionTitle {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+
+    transition: 0.4s;
+}
+.TitleDivRowSectionDescription {
+    position: absolute;
+    color: white;
+    padding-top: 50px;
+
+    width: 250px;
+    opacity: 0;
+
+    transition: 0.4s;
+}
+.TitleDivRowImage {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+
+    filter: blur(0px);
+
+    transition: 0.4s;
+}
+.TitleDivRightRowSection:hover .TitleDivRowImage {
+    filter: blur(3px);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+.TitleDivRightRowSection:hover .TitleDivRowSectionTitle {
+    padding-bottom: 75px;
+}
+.TitleDivRightRowSection:hover .TitleDivRowSectionDescription {
+    opacity: 1;
+}
