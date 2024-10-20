@@ -11,11 +11,11 @@
         <header class="Header">
             <div class="GnbButton">GNB copy wiki</div>
             <div class="DropdownWeapons">
-                Weapons
+                Items
                 <div class="WeaponsDropdown">
-                    <div>Single-shot</div>
-                    <div>Multi-shot</div>
-                    <div>Miscellaneous</div>
+                    <div>Firearms</div>
+                    <div>Melees</div>
+                    <div>Utilities</div>
                 </div>
             </div>
             <div class="DropdownMaps">
@@ -57,53 +57,145 @@
             </div>
         </header>
         <main>
-            <div class="WeaponsDescription">
-                <img src="/Images/Hougoumont_preview_image.webp" class="WeaponsDescriptionBackground">
-                <p class="WeaponsDescriptionText">
-                    There are many weapons in Guts and Blackpowder, each being designed for a unique purpose, with most having some background history,
+            <div class="HeaderDescription">
+                <img src="/Images/Hougoumont_preview_image.webp" class="HeaderDescriptionBackground">
+                <p class="HeaderDescriptionText">
+                    There are many items in Guts and Blackpowder, each being designed for a unique purpose, with most having some background history,
                     this page will briefly explain and showcase the various weapons found in Guts and Blackpowder. More complex breakdowns and guides 
                     can be found on each weapon's specific pages. 
-                    This page will cover firearms, melees, and damage-dealing items. 
+                    This page will cover firearms, melees, utility, and equippable items. 
                 </p>
             </div>
-            <div class="SingleShot">
-                <div class="SingleShotLeftSection">
-                    <img src="/Images/FoggyField.webp" class="SingleShot-Background">
-                    <p class="SingleShotLeftTitleText">Single shot weapons</p>
-                    <p class="SingleShotLeftTitleDescription">
+            <div class="FireArmsHeader">
+                <img src="/Images/Hougoumont_preview_image.webp" class="FireArmsHeaderBackground">
+                <p class="FireArmsTitle">Fire arms</p>
+                <p class="FireArmsText" style="width: 800px;">
+                    This section covers all the firearms in Guts and Blackpowder, 
+                    these ranged weapons can engage zombies safely from a distance, with 
+                    each shot being capable of dealing a deadly blow to zombies.
+                    Each firearm has a headshot multiplier of 900, but Zappers have damage resistance to firearms (with some exceptions).
+                </p>
+            </div>
+            <div class="Firearms">
+                <div class="FirearmsLeftSection">
+                    <img src="/Images/FoggyField.webp" class="Firearms-Background">
+                    <p class="FirearmsLeftTitleText">Single shot weapons</p>
+                    <p class="FirearmsLeftTitleDescription">
                         These weapons are traditional single-shot firearms, you fire one shot and then reload, 
                         some weapons have unique traits or are specifically designed for certain purposes</p>
                 </div>
-                <div class="SingleShotRightSection">
-                    <div class="SingleShotRightRowSection">
-                        <img src="/Images/FoggyField.webp" class="SingleShotRowImage">
-                        <p class="SingleShotRowSectionTitle">Musket</p>
-                        <p class="SingleShotRowSectionDescription">The basic Napoleonic firearm, 
-                            a powerful and accurate shot, its bayonet becomes a free horde
-                            clearer if one masters it.</p>
+                <div class="FirearmsRightSection">
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Musket</p>
+                        <p class="FirearmsRowSectionDescription">The basic Napoleonic firearm, 
+                            a powerful and accurate shot, its bayonet can quickly and effictively wipe hordes if mastered.</p>
                     </div>
-                    <div class="SingleShotRightRowSection">
-                        <img src="/Images/FoggyField.webp" class="SingleShotRowImage">
-                        <p class="SingleShotRowSectionTitle">Carbine</p>
-                        <p class="SingleShotRowSectionDescription" style="width: 350px;">
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Carbine</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 400px; padding-top: 75px;">
                             An alternative weapon for the line infantry, 
-                            trades the bayonet, accuracy, and power per shot for a quick reload, and zombie shoving.
+                            trades the bayonet, accuracy, and power per shot for a quick reload, and zombie shoving, each shove deals 10 damage and stuns the zombie.
                             Recommended for players who want the reload of the pistol, but also wants the powerful sidearms of the line infantry.
                         </p>
                     </div>
-                    <div class="SingleShotRightRowSection">
-                        <img src="/Images/FoggyField.webp" class="SingleShotRowImage">
-                        <p class="SingleShotRowSectionTitle">Pistol</p>
-                        <p class="SingleShotRowSectionDescription">
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Pistol</p>
+                        <p class="FirearmsRowSectionDescription">
                             The default weapon for the officer, one of the quickest reloads, but low damage, inaccurate at a far range, good for hunting bombers from close to medium ranges.
                         </p>
                     </div>
-                    <div class="SingleShotRightRowSection">
-                        <img src="/Images/FoggyField.webp" class="SingleShotRowImage">
-                        <p class="SingleShotRowSectionTitle">Rifle</p>
-                        <p class="SingleShotRowSectionDescription" style="width: 350px;">
-                            Derived from hunting rifles, high power per shot, but suffers from a slow reload time and walkspeed, 
-                            allows its user to aim through its iron sights, allowing for easier long range sniping. No damage reduction against zappers, allowing for mostly one shot kills.
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Rifle</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 350px; padding-top: 60px;">
+                            Issued to Austrian Feldjägers, high power per shot, but suffers from a slow reload time and walkspeed. 
+                            Allows its user to aim through its iron sights, allowing for easier long range sniping. No damage reduction against zappers, allowing for mostly one shot kills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Firearms">
+                <div class="FirearmsLeftSection">
+                    <img src="/Images/FoggyField.webp" class="Firearms-Background">
+                    <p class="FirearmsLeftTitleText">Multi shot weapons</p>
+                    <p class="FirearmsLeftTitleDescription" style="padding-top: 75px;">
+                        These firearms have more than one shot, making missing shots less punishing, for increased power,
+                        the user may also be able to shoot both barrels in a single burst shot. multi-shot weapons' reloads are on the longer side.</p>
+                </div>
+                <div class="FirearmsRightSection">
+                    <div class="FirearmsRightRowSection" style="height: 500px;">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Horse Artillery Pistol</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 400px; padding-top: 150px;">
+                            Designed for the British Royal Horse Artillery, the Horse Artillery Pistol is
+                            a unique pistol with an attacheable stock and enlongated barrel, akin to that of a carbine, 
+                            the notable difference is that it is fitted with two barrels and locks, allowing it to fire 
+                            off two shots, quick reload after firing one shot. But suffers from an uncancelable and long reload
+                            if both shots are fired.
+                            Alternative weapon for the line infantry class, less accuracy and shot power; no bayonet.
+                        </p>
+                    </div>
+                    <div class="FirearmsRightRowSection" style="height: 500px;">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Double Barrel Pistol</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 350px; padding-top: 75px;">
+                            An alternative weapon for the officer. Retains the same traits of the Horse Artillery Pistol, 
+                            but has a quicker reload and is even less accurate and powerful, if used properly, can be considered
+                            a direct upgrade to the officer's pistol. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Firearms">
+                <div class="FirearmsLeftSection">
+                    <img src="/Images/FoggyField.webp" class="Firearms-Background">
+                    <p class="FirearmsLeftTitleText">Spread shot weapons</p>
+                    <p class="FirearmsLeftTitleDescription" style="padding-top: 100px; width: 500px;">
+                        These weapons function like shotguns, firing multiple smaller shots and scattering them using spread, high combined power, 
+                        but lower damage and penetration per individual shot, making them a powerful horde clearer.
+                        These weapons are even more effective in tight funnels or passageways, as shots are almost guaranteed to land 
+                        despite the varying spread of each weapon. 
+                    </p>
+                </div>
+                <div class="FirearmsRightSection">
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Blunderbuss</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 400px;">
+                            The classic shotgun, high power, but a slower reload and walkspeed.
+                            Obtaineable for free for the seaman class, can easily wipe hordes or zombies
+                            in a single shot from close to medium ranges.
+                        </p>
+                    </div>
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Nock Gun</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 500px; padding-top: 100px;">
+                            Designed by Henry Nock for the Royal Navy, the Nock Gun is
+                            a combination of multi and spread shot traits, the Nock Gun has the highest damage per 
+                            individual shot, with 7 barrels, it suffers from a long reload (if reloading all the barrels). However, the reload can be canceled after 
+                            an individual shot is rammed down the bore by clicking, saving the shots. 
+                            The Nock Gun has carbine accuracy, but can easily eradicate hordes at any range, takes a high amount of effort to learn.
+                        </p>
+                    </div>
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Navy Pistol</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 500px; padding-top: 60px;">
+                            A quicker and smaller version of the blunderbuss for the seaman, slightly higher damage, but trades accuracy and penetration for speed.
+                            Suprisingly fast reload speed, same as the pistol, the weapon also uniquely has the ability to shove zombies, only shared with the carbine. 
+                            Additionally, the weapon does full damage against Zappers.
+                        </p>
+                    </div>
+                    <div class="FirearmsRightRowSection">
+                        <img src="/Images/FoggyField.webp" class="FirearmsRowImage">
+                        <p class="FirearmsRowSectionTitle">Brass Pistol</p>
+                        <p class="FirearmsRowSectionDescription" style="width: 350px;">
+                            Functions similar the Navy Pistol, but has a lower range, and a higher reload time, and no shove. The weapon is available for the officer class,
+                            Offers a spread-shot option to the officer class.
                         </p>
                     </div>
                 </div>
