@@ -23,7 +23,7 @@
 
     filter: blur(3px);
 }
-.FireArmsHeader {
+.WeaponsHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@
     
     transform: 0.4s;
 }
-.FireArmsHeaderBackground {
+.WeaponsHeaderBackground {
     height: 100%;
     width: 100%;
 
@@ -48,13 +48,13 @@
 
     transition: 0.4s;
 }
-.FireArmsTitle {
+.WeaponsTitle {
     position: absolute;
     font-size: 40px;
 
     transition: 0.4s;
 }
-.FireArmsText {
+.WeaponsText {
     position: absolute;
     font-size: 20px;
     width: 500px;
@@ -63,23 +63,23 @@
     opacity: 0;
     transition: 0.4s;
 }
-.FireArmsHeader:hover .FireArmsHeaderBackground {
+.WeaponsHeader:hover .WeaponsHeaderBackground {
     filter: blur(3px);
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
 }
-.FireArmsHeader:hover .FireArmsTitle {
+.WeaponsHeader:hover .WeaponsTitle {
     padding-bottom: 100px;
 }
-.FireArmsHeader:hover .FireArmsText {
+.WeaponsHeader:hover .WeaponsText {
     opacity: 1;
 }
-.Firearms {
+.Weapons {
     width: 100%;
     height: 500px;
 
     display: flex;
 }
-.Firearms-Background {
+.Weapons-Background {
     height: 100%;
     width: 100%;
 
@@ -88,7 +88,7 @@
 
     transition: 0.4s;
 }
-.FirearmsLeftSection {
+.WeaponsLeftSection {
     width: 45%;
     height: 100%;
 
@@ -97,14 +97,14 @@
     align-items: center;
     justify-content: center;
 }
-.FirearmsLeftTitleText {
+.WeaponsLeftTitleText {
     position: absolute;
     color: white;
     font-size: 40px;
     
     transition: 0.4s;
 }
-.FirearmsLeftTitleDescription {
+.WeaponsLeftTitleDescription {
     position: absolute;
     color: white;
     display: flex;
@@ -117,17 +117,17 @@
     
     transition: 0.4s;
 }
-.FirearmsLeftSection:hover .FirearmsLeftTitleText {
+.WeaponsLeftSection:hover .WeaponsLeftTitleText {
     padding-bottom: 100px;
 }
-.FirearmsLeftSection:hover .FirearmsLeftTitleDescription {
+.WeaponsLeftSection:hover .WeaponsLeftTitleDescription {
     opacity: 1;
 }
-.FirearmsLeftSection:hover .Firearms-Background {
+.WeaponsLeftSection:hover .Weapons-Background {
     filter: blur(3px);
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
 }
-.FirearmsRightSection {
+.WeaponsRightSection {
     width: 55%;
     height: 100%;
 
@@ -135,7 +135,7 @@
     grid-template-columns: 1fr 1fr;
     overflow: visible;
 }
-.FirearmsRightRowSection {
+.WeaponsRightRowSection {
     height: 250px;
     width: 100%;
 
@@ -145,14 +145,14 @@
     flex-direction: column;
     text-align: center;
 }
-.FirearmsRowSectionTitle {
+.WeaponsRowSectionTitle {
     position: absolute;
     color: white;
     font-size: 30px;
 
     transition: 0.4s;
 }
-.FirearmsRowSectionDescription {
+.WeaponsRowSectionDescription {
     position: absolute;
     color: white;
     padding-top: 50px;
@@ -162,7 +162,7 @@
 
     transition: 0.4s;
 }
-.FirearmsRowImage {
+.WeaponsRowImage {
     height: 100%;
     width: 100%;
 
@@ -172,13 +172,69 @@
 
     transition: 0.4s;
 }
-.FirearmsRightRowSection:hover .FirearmsRowImage {
+.WeaponsRightRowSection:hover .WeaponsRowImage {
     filter: blur(3px);
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
 }
-.FirearmsRightRowSection:hover .FirearmsRowSectionTitle {
+.WeaponsRightRowSection:hover .WeaponsRowSectionTitle {
     padding-bottom: 75px;
 }
-.FirearmsRightRowSection:hover .FirearmsRowSectionDescription {
+.WeaponsRightRowSection:hover .WeaponsRowSectionDescription {
+    opacity: 1;
+}
+.GridTemplateTwo {
+    text-align: center;
+    color: white;
+}
+.GridTemplateTwoGrid {
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2;
+}
+.GridTemplateTwoGridUnit {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GridTemplateTwoGridUnitBackgroundImage {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    filter: blur(0px);
+    
+    transition: 0.4s;
+}
+.GridTemplateTwoGridUnitTitle {
+    position: absolute;
+    transform: 0.4s;
+    font-size: 30px;
+
+    transition: 0.4s;
+}
+.GridTemplateTwoGridUnitText {
+    position: absolute;
+    transform: 0.4s;
+    font-size: 20px;
+
+    width: 400px;
+    padding-top: 100px;
+
+    transition: 0.4s;
+    opacity: 0;
+}
+.GridTemplateTwoGridUnit:hover .GridTemplateTwoGridUnitBackgroundImage {
+    filter: blur(3px);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+.GridTemplateTwoGridUnit:hover .GridTemplateTwoGridUnitTitle {
+    padding-bottom: 70px;
+}
+.GridTemplateTwoGridUnit:hover .GridTemplateTwoGridUnitText {
     opacity: 1;
 }
