@@ -229,7 +229,7 @@
                     <div class="GridTemplateTwoGridUnit">
                         <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
                         <p class="GridTemplateTwoGridUnitTitle">Heavy Sabre</p>
-                        <p class="GridTemplateTwoGridUnitText" style="width: 450px; padding-top: 150px;">A slightly slower version of the sabre, deals less damage than one if one uses the side-swings, 
+                        <p class="GridTemplateTwoGridUnitText" style="width: 500px; padding-top: 150px;">A slightly slower version of the sabre, deals less damage than it if one uses the side-swings, 
                             though it does stagger zombies from movement. Longer range and higher damage than the Sabre when using the down and up jabs. 
                             Available to only the line infantry class, can two shot shamblers on most objective maps, similar to the musket's bayonet as it
                             offers more headshot control with its jabs.
@@ -293,7 +293,7 @@
                 </p>
             </div>
             <div class="GridTemplateTwo">
-                <div class="GridTemplateTwoGrid" style="grid-template-rows: 1; height: 400px;">
+                <div class="GridTemplateTwoGrid" style="grid-template-rows: 2; height: 400px;">
                     <div class="GridTemplateTwoGridUnit">
                         <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
                         <p class="GridTemplateTwoGridUnitTitle">Water Bucket</p>
@@ -326,14 +326,25 @@
                         </p>
                     </div>
                 </div>
-                <div class="WeaponsHeader">
-                    <img src="/Images/Hougoumont_preview_image.webp" class="WeaponsHeaderBackground">
-                    <p class="WeaponsTitle">Lantern</p>
-                    <p class="WeaponsText" style="width: 800px;">
-                        A lantern that illuminates the area around the player, doesn't help affect the gameplay whatsoever, but it does help light up many of the dark areas in the game.
-                        Obtained for free by defeating the Headless Horseman on the Sleepy Hallow limited time map, takes up a utility slot. 
-                        By using this, players will mostly hinder themselves.
-                    </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; height: 400px;">
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Box of Bandages</p>
+                        <p class="GridTemplateTwoGridUnitText" style="width: 600px;">
+                            The default utility available to the surgeon, can only be placed down once per life, and requires full medical supplies to use.
+                            When placed down, the surgeon loses all of their medical supplies, and players are now able to take a bandage (1 at a time, each box having 6 bandages), 
+                            each bandage takes a short amount of time to use, but will heal the player most of their health over time.
+                        </p>
+                    </div>
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle" style="color: orange;">Jack-o'-Lantern</p>
+                        <p class="GridTemplateTwoGridUnitText" style="width: 600px;">
+                            An unlockable utility that replaces either the Water Bucket or Grenade(s), it doesn't benefit gameplay whatsoever, but it does help illuminate the many
+                            dark areas of the map, helping the player to see better. Unlockable for free, but requires the player to beat the Sleepy Hallow map, a limited time mode 
+                            only available during the Halloween season.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="WeaponsHeader">
@@ -376,6 +387,92 @@
                             A chaplain item that has an extremely powerful effect, and subsequently a long cooldown. When used, all Shamblers, Runners, and Zapper within the crucifix's 
                             area-of-effect will be put into a stun-locked position, unable to move and attack. 
                             The crucifix can be used to clear ways or push back zombies, allowing for safe passage or recovery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="WeaponsHeader">
+                <img src="/Images/Hougoumont_preview_image.webp" class="WeaponsHeaderBackground">
+                <p class="WeaponsTitle">Instruments</p>
+                <p class="WeaponsText" style="width: 900px;">
+                    These are the items that the musician class can use, each helping to buff nearby team mates, making them a great support tool.
+                    The musician's instruments buff speed and damage stats, such as reload speed, swing speed, and a short damage buff, allowing the musician to play various roles 
+                    on the back and front lines. Same instrument effects cannot stack. Nearby identical instruments will play the same song in sync.
+                </p>
+            </div>
+            <div class="GridTemplateTwo">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; height: 400px;">
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Fife</p>
+                        <p class="GridTemplateTwoGridUnitText" style="width: 600px; padding-top: 120px;">
+                            The default instrument for the musician, plays various military songs depending on the nation chosen, buffs nearby team mates' firearm reloads by 20%, and improves
+                            the building speed of sappers' hammers, making them significantly faster. Due to the nature of its buff, 
+                            it is encouraged to stay at the back line, or near players who are mainly using firearms. Requires timing with a metronome.
+                        </p>
+                    </div>
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Drums</p>
+                        <p class="GridTemplateTwoGridUnitText" style="width: 500px;">
+                            Marching drums that sync to the beat of a nearby fife player, requires timing with a metronome. When played, improves the nearby melee swing speeds of other players
+                            by 35%. Due to the nature of melee combat in Guts & Blackpowder, it is recommended to stay near the front-lines while playing this instrument. 
+                        </p>
+                    </div>
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Bugle</p>
+                        <p class="GridTemplateTwoGridUnitText" style="width: 550px;">
+                            A completely front-line focused item, has a bugle charge meter that fills up when dealing damage and getting kills with their sabre. When filled up, 
+                            the player can play a bugle call, after it is finished. All damage dealt to zombies for nearby players, 
+                            including the player themselves, will be doubled (100% damage buff). Promotes a more aggressive playstyle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="WeaponsHeader">
+                <img src="/Images/Hougoumont_preview_image.webp" class="WeaponsHeaderBackground">
+                <p class="WeaponsTitle">Cannon items</p>
+                <p class="WeaponsText" >
+                    Below are the items that are utilized when loading or firing a cannon, the section will also include the available munitions that can be loaded.
+                    Cannons can be used to great effect, but are seldom seen in maps due to their power.
+                </p>
+            </div>
+            <div class="GridTemplateTwo">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; height: 400px;">
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Swab</p>
+                        <p class="GridTemplateTwoGridUnitText">
+                            The basic item that cleans and loads a cannon, typically found near where cannon are in-game. The item must be used after firing a cannon to cleanse it 
+                            of any gunpowder residue, before it is then used to ram the loaded munition down the bore of the cannon.
+                        </p>
+                    </div>
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Roundshot</p>
+                        <p class="GridTemplateTwoGridUnitText" style="padding-top: 120px;">
+                            The generic cannon shot for much of the traditional cannon's existence, a solid steel metal ball that eradicates any living being it hits.
+                            Pinpoint accuracy, high penetration, and almost always 1 shot, loaded after the cannon has been cleansed by a swab. 
+                            It is a round ball, hence its name.
+                        </p>
+                    </div>
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Canister</p>
+                        <p class="GridTemplateTwoGridUnitText" style="width: 450px; padding-top: 150px;">
+                            The canister shot is made up of many tiny balls within it, all spreading out in a radius when fired by the cannon. Loaded after the cannon is cleansed by a swab,
+                            fires out many tiny shots, each dealing high enough damage to 1 hit zombies, but has low penetration. Generally considered better than Roundshot
+                            for dispersed crowds. Packaged like a canister, hence its name.
+                        </p>
+                    </div>
+                    <div class="GridTemplateTwoGridUnit">
+                        <img src="/Images/FoggyField.webp" class="GridTemplateTwoGridUnitBackgroundImage">
+                        <p class="GridTemplateTwoGridUnitTitle">Grapeshot</p>
+                        <p class="GridTemplateTwoGridUnitText" style="width: 450px; padding-top: 130px;">
+                            Multiple cannon balls packaged in a way that resembles grapes, hence its name. A mix of roundshot and canister, generally considered the most powerful of the 
+                            cannon munitions in-game. Fires out multiple cannon balls, eradicating anything in its way, all while having the spread and crowd control of the canister shot.
+                            Devastating effects, annihalates tighter crowds.
                         </p>
                     </div>
                 </div>
