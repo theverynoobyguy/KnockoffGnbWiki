@@ -1,0 +1,104 @@
+.VerticalGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.VerticalGridUnit {
+    display: flex;
+    height: 250px;
+}
+.VerticalGridUnit-ImageBlock {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.VerticalGridUnit-Image {
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+
+    transition: 0.4s;
+    filter: blur(0px);
+}
+.VerticalGridUnit-ImageText {
+    position: absolute;
+    font-size: 30px;
+}
+.VerticalGridUnit-TextSection {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VerticalGridUnit-TextSection-BackgroundImage {
+    height: 100%;
+    width: 100%;
+
+    transition: 0.4s;
+    filter: blur(0px);
+}
+.VerticalGridUnit-TextSection-Text {
+    position: absolute;
+    width: 500px;
+
+    font-size: 15px;
+}
+.VerticalGridUnit-TextSection:hover .VerticalGridUnit-TextSection-BackgroundImage{
+    filter: blur(4px);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+.NationFlags {
+    display: grid;
+
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.NationFlagImages {
+    height: 25px;
+
+    object-fit: cover;
+}
+.FrancEarningsSheet {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px;
+
+    text-align: right;
+
+    font-size: 16px;
+
+    opacity: 0;
+    transition: 0.4s;
+} 
+.VerticalGridUnit-ImageBlock:hover .FrancEarningsSheet {
+    opacity: 1;
+}
+.VerticalGridUnit-ImageBlock:hover .VerticalGridUnit-Image {
+    filter: blur(4px);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.4);
+}
+.VerticalGridUnit-ImageBlock:hover {
+    cursor: pointer;
+}
+
